@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/reset.css">
+     <style>
+        header,main{
+            width: 1116px;
+            background-color: #ffffff;
+            margin: 0px auto;
+        }
+        header{
+            height: 64px;
+            box-shadow: 0px 5px 5px 1px #f0f0f0;
+            margin-bottom: 2px;
+        }
+        header>div{
+            float: left;
+            height: 100%;
+            line-height: 100%;
+            
+        }
+        
+        .menu-list ul li{
+            display: block;
+            height: 64px;
+            float: left;
+            padding: 0px 10px;
+
+        }
+        .menu-list ul li a{
+           
+            display: block;
+            text-decoration: none;
+            color: #242528;
+           
+        }
+        .menu-list ul li a span{
+            display: inline-block;
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+           
+        }
+        #logo{
+            width: 60px;
+            height: 30px;
+        }
+        .search-area{
+            width: 306px;
+            height: 38px;
+            text-align: center;
+        }
+        .search-text{
+            display: inline-block;
+            width: 260px;
+            height: 35px;
+            line-height: 38px;
+            border-radius: 8px;
+            margin: 10px auto;
+            background-color: #f2f3f4;
+           
+        }
+        .users ul li{
+           float: left;
+        }
+        .users ul li a{
+            display: inline-block;
+           text-decoration: none;
+           height: 36px;
+           line-height: 36px;
+           margin: 12px auto;
+           padding: 0px 8px;
+        }
+        .login{
+            width: 36px;
+            border-radius: 50%;
+            background-color: #00AEEC;
+            color: #fff;
+            font-size: 14px;
+            text-align: center;
+        }
+        .users ul li img{
+            display: inline-block;
+            width: 20px;
+            height: 21px;
+        }
+        .upload{
+            width: 34px;
+            background-color: #fb7299;
+            color: #fff;
+            text-align: center;
+        }
+        .video-title,.video-content,.video-footer,.video-info{
+            width: 668px;
+        }
+        .video-title{
+            
+            height: 106px;
+            background-color: aquamarine;
+        }
+        .video-content{
+            height: 376px;
+            background-color: aqua;
+        }
+        .video-footer{
+            height: 46px;
+            box-shadow: 0px 5px 5px 1px #f0f0f0;
+        }
+        .video-info{
+            height: 57px;
+            border-bottom: solid #e3e5e7;
+        }
+        .user-info,.video-list,.comment-list,.recommend-list{
+            width: 380px;
+        }
+        .user-info{
+            
+            height: 80px;
+        }
+        .comment-list{
+            height: 44px;
+        }
+        .video-list{
+
+        }
+     </style>
+    </head>
+    <body>
+        <header>
+          <div class="menu-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span>
+                            <img id="logo" src="./img/logo.png" />
+                            首页
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>番剧</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>直播</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>游戏中心</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>会员购</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>漫画</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>赛事</span>
+                    </a>
+                </li>
+            </ul>
+          </div>
+          <div class="search-area">
+            <input id="search-text" class="search-text"/>
+          </div>
+          <div class="users">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="login">
+                            <span>登陆</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/01.svg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/02.svg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/03.svg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/04.svg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/05.svg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./img/06.svg"/>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="upload">
+                            <img src="./img/07.svg"/>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </header>
+        <main>
+          <article>
+            <div class="video-title">
+                <h1 title="尚硅谷Web前端零基础入门HTML5+CSS3基础教程丨初学者从入门到精通" class="video-title tit">尚硅谷Web前端零基础入门HTML5+CSS3基础教程丨初学者从入门到精通</h1>
+            </div>
+            <div class="video-content">
+
+            </div>
+            <div class="video-footer"></div>
+            <div class="video-info"></div>
+          </article>
+          <aside>
+            <div class="user-info"></div>
+            <div class="comment-list"></div>
+            <div class="video-list"></div>
+            <div class="recommend-list"></div>
+          </aside>
+        </main>
+       
+    </body>
+</html>
