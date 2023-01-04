@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/reset.css">
+        <style>
+            .image-list{
+                position: relative;
+                top: 0px;
+                left: 0px;
+                
+                
+            }
+            .image-list ul{
+                position: absolute;
+                top: 50px;
+
+            }
+            .image-list ul li{
+                position: absolute;
+                top: 50px;
+                left: 200px;
+                width: 590px;
+                height: 470px;
+            }
+            .image-list ul li:nth-child(1){
+                z-index: 100;
+            }
+            .image-list ul li img{
+               
+                width: 590px;
+                height: 470px;
+            }
+            .pointer{
+                position: absolute;
+                z-index: 9999;
+                top: 550px;
+                left: 220px;
+            }
+            .pointer div{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color:#e8e7e3;
+                float: left;
+                margin: 0px 4px;
+            }
+            .pointer div:hover{
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                border: 2px solid rgba(0,0,0,.05);
+                background-color:#ffffff;
+    
+            }
+            
+        </style>
+        <script>
+           function changeImage(index){
+                // alert("hello world index="+index);
+                var elements = document.getElementsByTagName("li");
+                for(var i=0;i<elements.length;i++){
+                   var li = elements[i];
+                   if (index==i+1){
+                    li.setAttribute("style","z-index:100") 
+                   }else{
+                    li.setAttribute("style","z-index:0") 
+                   }
+                   
+                }
+           }
+        </script>
+    </head>
+    <body>
+        <div class="image-list">
+            <ul>
+                <li>
+                    <img src="./img/jd01.jpg.avif" alt="">
+                </li>
+                <li>
+                    <img src="./img/jd02.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jd03.jpg.avif" alt="">
+                </li>
+                <li>
+                    <img src="./img/jd04.jpg.avif" alt="">
+                </li>
+                <li>
+                    <img src="./img/jd05.jpg" alt="">
+                </li>
+                <li>
+                    <img src="./img/jd06.jpg.avif" alt="">
+                </li>
+            </ul>
+            <div class="pointer">
+               <div onmousemove="changeImage(1)"></div>
+               <div onmousemove="changeImage(2)"></div>
+               <div onmousemove="changeImage(3)"></div>
+               <div onmousemove="changeImage(4)"></div>
+               <div onmousemove="changeImage(5)"></div>
+               <div onmousemove="changeImage(6)"></div>
+            </div>
+        </div>
+    </body>
+</html>
