@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fa/css/all.css">
+    <style>
+        body{
+            width: 100%;
+        }
+        header{
+            background-color: #040a1c;
+            height: 80px;
+        }
+        header>div{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .logo{
+            width: 100px;
+            height: 50px;
+            padding: 15px 0px;
+            position: relative;
+            top: 0px;
+            left: 200px;
+        }
+        .logo>img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .search-box{
+            position: relative;
+            height: 30px;
+            width: 200px;
+            top:-55px;
+            left: 42.5%;
+            color: #ffffff;
+            border: 0.5px solid #ffffff;
+            border-radius: 15px;
+            
+           
+        }
+        #search{
+            width: 150px;
+           
+            margin-left: 0px;
+            background-color: #040a1c;
+            border: none;
+            color: #ffffff;
+            /* border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px; */
+        }
+       .search-icon{
+        margin: auto 0px;
+        /* font-size: 0.5px; */
+       }
+       main{
+        width: 100%;
+        height: 550px;
+        background-image: linear-gradient(#060d21 200px,#6e3f1e);
+       }
+       .login-box{
+         margin: 0px auto;
+         width: 400px;
+         height: 430px;
+         position: relative;
+         top: 60px;
+         background-image: linear-gradient(#040a1c 250px,#2e1f1d);
+       }
+       .login-box>h1{
+         color: #ee8a2d;
+         font-size: 10px;
+         font-weight: bold;
+         position:relative;
+         top:45px;
+         left: 105px;
+       }
+       .email-span,.pw-span{
+         display: block;
+         color: #484c59;
+         font-size: 5px;
+         margin-bottom: 5px;
+         margin-right: 5px;
+       }
+       .email-box{
+         margin-top: 100px;
+         display: flex;
+         justify-content: center;
+       }
+       .email,.pw{
+         background-color: #171d31;
+         border: none;
+         border-radius: 12.5px;
+         height: 25px;
+         width: 200px;
+       }
+       .password-box{
+         margin-top: 30px;
+         display: flex;
+         justify-content: center;
+       }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <img src="./img/Cinema_City.svg.png" alt="">
+      </div>
+      <div class="search-box">
+        <input type="text" id="search" name="search" placeholder="search...">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+      <div class="info"></div>
+    </header>
+    <main>
+        <div class="login-box">
+           <h1>LOG IN AS UNLIMITED MEMBER</h1>
+           <div class="email-box">
+            <span class="email-span">Email</span>
+            <input type="text" id="email" class="email">
+           </div>
+           <div class="password-box">
+             <span class="pw-span">
+                Password
+             </span>
+             <input type="password" id="pw" class="pw" >
+           </div>
+           <div class="info-box">
+
+             <a href="#">
+                <span>Forgot password?</span>
+             </a>
+             <span>Not a member?</span>
+             <a href="#">
+                <span>Register</span>
+             </a>
+           </div>
+           <button class="submit-btn" value="login"></button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
