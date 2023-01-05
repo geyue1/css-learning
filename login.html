@@ -104,6 +104,95 @@
          display: flex;
          justify-content: center;
        }
+       .info-box{
+         height: 25px;
+         width: 300px;
+         margin: 30px auto;
+        
+         
+
+       }
+       .left-link>span,.right-info>span,.right-link>span{
+         font-size: 1px;
+       }
+       .left-link,.right-link{
+         text-decoration: none;
+       }
+       .right-info>span{
+        color :#484c59;
+        
+       }
+       .left-link,.right-link{
+          color: #ee8a2d;
+       }
+       .left-info{
+         float: left;
+       }
+       .right-info{
+        float: right;
+       }
+       .submit-btn{
+        height: 30px;
+        width: 75px;
+        color: #ffffff;
+        background-color: #ee8a2d;
+        position: relative;
+        top: 0px;
+        left: 230px;
+        border-radius: 15px;
+        border: none;
+       }
+
+       .footer-box{
+         width: 100%;
+         height: 150px;
+         border-top: #ed7d1d solid 5px;
+         background-color: #060d21;
+       }
+       .buttom-box{
+         width: 100%;
+         height: 50px;
+         background-color: #171d31;
+       }
+       .footer-info-title>h1{
+         color: #ee8a2d;
+         font-size: 10px;
+         font-weight: bold;
+         margin-bottom: 20px;
+       }
+       .footer-info-content>a{
+        color: #484c59;
+        text-decoration: none;
+        font-size: 5px;
+        display: block;
+        margin-top: 10px;
+       }
+       .footer-info-box{
+        float: left;
+        margin: 30px 130px;
+       }
+       .socialWeb{
+         font-size: 18px;
+         color: #ffffff;
+       }
+       .social-link{
+         float: left;
+         width: 30px;
+         height: 30px;
+         border-radius: 50%;
+         background-color: #171d31;
+         margin-right: 15px;
+         
+       }
+       .social-link>a{
+         margin: 5px auto;
+       }
+       .buttom-content{
+         line-height: 50px;
+         text-align: center;
+         font-size: 10px;
+         color: #484c59;
+       }
     </style>
 </head>
 <body>
@@ -131,20 +220,82 @@
              <input type="password" id="pw" class="pw" >
            </div>
            <div class="info-box">
-
-             <a href="#">
-                <span>Forgot password?</span>
-             </a>
-             <span>Not a member?</span>
-             <a href="#">
-                <span>Register</span>
-             </a>
+             <div class="left-info">
+                <a href="#" class="left-link">
+                    <span>Forgot password?</span>
+                 </a>
+             </div>
+             <div class="right-info">
+                <span>Not a member?</span>
+                <a href="#" class="right-link">
+                   <span>Register</span>
+                </a>
+             </div>
            </div>
-           <button class="submit-btn" value="login"></button>
+           <button class="submit-btn" value="login">login</button>
         </div>
     </main>
     <footer>
-
+       <div class="footer-box">
+          <div class="footer-info-box">
+            <div class="footer-info-title">
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="footer-info-content">
+                <a href="#">Cinema City Poland</a>
+                <a href="#">Work with us</a>
+                <a href="#">Contact us</a>
+            </div>
+          </div>
+          <div class="footer-info-box">
+            <div class="footer-info-title">
+                <h1>LINKS</h1>
+            </div>
+            <div class="footer-info-content">
+                <a href="#">Global City Holdings</a>
+                <a href="#">Advertising in theaters</a>
+                <a href="#">Forum Film Poland</a>
+            </div>
+          </div>
+          <div class="footer-info-box">
+            <div class="footer-info-title">
+                <h1>INFORMATION</h1>
+            </div>
+            <div class="footer-info-content">
+                <a href="#">Regulations</a>
+                <a href="#">Privacy policy</a>
+            </div>
+          </div>
+          <div class="footer-info-box">
+            <div class="footer-info-title">
+                <h1>FOLLOW US</h1>
+            </div>
+            <div class="footer-info-content">
+                <div class="social-link">
+                    <a href="#">
+                        <i class="fab fa-facebook socialWeb"></i>
+                    </a>
+                </div>
+                <div class="social-link">
+                    <a href="#">
+                        <i class="fab fa-instagram socialWeb"></i>
+                    </a>
+                </div>
+                <div class="social-link">
+                    <a href="#">
+                        <i class="fab fa-twitter socialWeb"></i>
+                    </a>
+                </div>
+               
+            </div>
+          </div>
+       </div>
+       <div class="buttom-box">
+            <div class="buttom-content">
+                All rights reserved Cinema City Poland 2017
+                <i class="fas fa-copyright copyright"></i>
+            </div>
+       </div>
     </footer>
 </body>
 </html>
