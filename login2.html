@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login2</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fa/css/all.css">
+    <style>
+        /* 
+          通过设置html,body的宽高都为100%来让div充满屏幕
+        */
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+        .box{
+            width: 100%;
+            height: 100%;
+            min-width: 900px;
+            min-height: 600px;
+            overflow: hidden;
+            background-image: radial-gradient(circle  at 50%,#355f9b,#25126b);
+        }
+        .login-box{
+            width: 900px;
+            height: 600px;
+            margin: 100px auto;
+        }
+        .left-box{
+            width: 550px;
+            height: 100%;
+            background-image: url("./img/login2.jpg");
+            float: left;
+            color: #fff;
+        }
+        .title-box{
+            width: 400px;
+            height: 65px;
+            margin: 70px auto;
+            text-align: left;
+            font-size: 25px;
+        }
+        .title-box h1{
+            line-height: 40px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .title-box h1:last-of-type{
+            font-weight: bolder;
+            font-size: 50px;
+        }
+        .right-box{
+            width: 350px;
+            height: 100%;
+            background-color: #fff;
+            float: left;
+        }
+        .login-form{
+            width: 300px;
+            height: 500px;
+            margin: 75px 30px;
+            /* background-color: red; */
+        }
+        .login-form li{
+            margin-bottom: 30px;
+        }
+        .signin-li{
+            color: #25126b;
+            font-size: 25px;
+        }
+        .input-box{
+            width: 100%;
+            height: 30px;
+            margin-bottom: 15px;
+            line-height: 30px;
+            border-bottom: #e1e1e1 solid 1px;
+        }
+        .username,.pw{
+            height: 25px;
+            width: 270px;
+            border: none;
+        }
+        .username:focus,.pw:focus{
+            outline: none;
+        }
+        .icon{
+            color: #e1e1e1;
+        }
+        .form-btn{
+            width: 100px;
+            height: 30px;
+            background-color: #25126b;
+            color: #fff;
+            border: none;
+            font-size: 10px;
+        }
+        .signup-li{
+            text-align: center;
+            margin-top: 130px;
+        }
+        .signup-li a{
+            text-decoration: none;
+        }
+        .f{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .f,.s{
+            color: #25126b;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .signup-li h3{
+            font-size: 7.5px;
+            color: #858585;
+        }
+        .social-link-li{
+            position: relative;
+        }
+        .social-link{
+            font-size: 25px;
+            float: left;
+            color:#25126b;
+        }
+        .social-link:first-of-type{
+           
+            position: absolute;
+            left: 92.5px;
+        }
+        .social-link:nth-of-type(2){
+            position: absolute;
+            left: 137.5px;
+        }
+        .social-link:last-of-type{
+            position: absolute;
+            left: 182.5px;
+        }
+    </style>
+</head>
+<body>
+     <div class="box">
+        <div class="login-box">
+           <div class="left-box">
+            <div class="title-box">
+                <h1>A Technology That</h1>
+                <h1>GROWING FAST</h1>
+            </div>
+           </div>
+           <div class="right-box">
+              <div class="login-form">
+                 <ul>
+                    <li class="signin-li">
+                        <h1>SIGN IN</h1>
+                    </li>
+                    <li>
+                        <div class="input-box">
+                            <input type="text" id="username" class="username" placeholder="Username">
+                            <i class="fas fa-user icon"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id="pw" class="pw" placeholder="Password">
+                            <i class="fas fa-lock icon"></i>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <button class="form-btn">LOG IN</button>
+                    </li>
+                    <li>
+                      
+                    </li>
+                    <li class="signup-li">
+                        <a href="#" class="f">Forget Password?</a>
+                        <h3>Don't have account?</h3>
+                        <a href="#" class="s">SIGNUP</a>
+                    </li>
+                    <li class="social-link-li">
+                        <div class="social-link">
+                            <a href="#">
+                                <i class="fab fa-facebook socialWeb"></i>
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a href="#">
+                                <i class="fab fa-instagram socialWeb"></i>
+                            </a>
+                        </div>
+                        <div class="social-link">
+                            <a href="#">
+                                <i class="fab fa-twitter socialWeb"></i>
+                            </a>
+                        </div>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </div>
+        
+</body>
+</html>
