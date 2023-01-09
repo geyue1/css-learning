@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex layout</title>
+
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            width:100 vw;
+            height: 70px;
+            background-color: aqua;
+        }
+        main{
+            width: 100vw;
+            background-color: bisque;
+            flex-grow: 1;
+
+            display: flex;
+        }
+        main>nav{
+            width: 180px;
+
+            background-color: cadetblue;
+        }
+        main>article{
+            flex-grow: 1;
+
+        }
+        footer{
+            height: 100px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <nav>
+
+        </nav>
+        <article>
+
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>
